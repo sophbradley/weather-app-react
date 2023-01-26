@@ -1,0 +1,25 @@
+.Weather {
+  max-width: 600px;
+  border: 1px solid black;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.Weather ul {
+  list-style: none;
+}
+
+.Weather .weatherIcon {
+  float: left;
+}
+
+.Weather .currentTemperature {
+  font-size: 64px;
+}
+
+.Weather .currentTemperatureUnits {
+  position: relative;
+  top: -32px;
+  font-size: 20px;
+}

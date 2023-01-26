@@ -1,7 +1,19 @@
-.App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.App {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.App-header,
+.App-footer {
+  text-align: center;
   color: blueviolet;
+}
+
+.App-footer a {
+  color: blueviolet;
+  transition: all 150ms ease-in-out;
+}
+
+.App-footer a:hover {
+  font-weight: 500;
 }
