@@ -8,7 +8,7 @@ function App() {
         <header className="App-header">
           <h1>Weather App</h1>
         </header>
-        <Weather />
+        <Weather defaultCity="London" />
         <footer className="App-footer">
           <a
             href="https://github.com/sophbradley/weather-app-react"
