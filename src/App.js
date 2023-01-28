@@ -13,7 +13,7 @@ function App() {
           <a
             href="https://github.com/sophbradley/weather-app-react"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Open source code
           </a>{" "}
