@@ -1,4 +1,5 @@
 import React from "react";
+import "./FormattedDate.css";
 
 export default function FormattedDate(props) {
   let days = [
@@ -41,7 +42,7 @@ export default function FormattedDate(props) {
   }
 
   return (
-    <div>
+    <div className="lastUpdate">
       Last Update: {day} {date} {month} {year} {hours}:{minutes}
     </div>
   );

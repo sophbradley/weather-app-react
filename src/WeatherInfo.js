@@ -20,7 +20,9 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col-6">
           <ul>
-            <li>Current condition: {props.data.description}</li>
+            <li className="text-capitalize">
+              Current condition: {props.data.description}
+            </li>
             <li>Humidity: {props.data.humidity} %</li>
             <li>Wind Speed: {Math.round(props.data.windSpeed)} m/s</li>
           </ul>
