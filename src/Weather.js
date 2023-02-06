@@ -12,6 +12,7 @@ export default function Weather(props) {
 
   function displayWeather(response) {
     setWeatherInformation({
+      coordinates: response.data.coord,
       city: response.data.name,
       country: response.data.sys.country,
       iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
@@ -58,7 +59,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherInformation} />
-        <WeatherForecast />
+        <WeatherForecast coordinates={weatherInformation.coordinates} />
       </div>
     );
   } else {
