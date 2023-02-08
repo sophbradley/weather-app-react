@@ -5,9 +5,8 @@ import CurrentTemperature from "./CurrentTemperature";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <h2 className="mt-3">
-        {props.data.city}, {props.data.country}
-      </h2>
+      <h2 className="mt-3">{props.data.city}</h2>
+      <h4>{props.data.country}</h4>
       <FormattedDate date={props.data.date} />
       <div className="row">
         <div className="col-6">
