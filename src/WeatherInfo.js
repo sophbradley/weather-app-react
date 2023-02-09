@@ -5,11 +5,11 @@ import CurrentTemperature from "./CurrentTemperature";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <h2 className="mt-3">{props.data.city}</h2>
-      <h4>{props.data.country}</h4>
+      <h2 className="mt-3 city-name">{props.data.city}</h2>
+      <h4 className="city-country">{props.data.country}</h4>
       <FormattedDate date={props.data.date} />
       <div className="row">
-        <div className="col-6">
+        <div className="col-md-6 current-conditions">
           <img
             className="weatherIcon"
             src={props.data.iconUrl}
@@ -17,13 +17,17 @@ export default function WeatherInfo(props) {
           />
           <CurrentTemperature celsius={props.data.temperature} />
         </div>
-        <div className="col-6">
+        <div className="col-md-6">
           <ul>
-            <li className="text-capitalize">
+            <li className="text-capitalize current-conditions">
               Current condition: {props.data.description}
             </li>
-            <li>Humidity: {props.data.humidity} %</li>
-            <li>Wind Speed: {Math.round(props.data.windSpeed)} km/h</li>
+            <li className="current-conditions">
+              Humidity: {props.data.humidity} %
+            </li>
+            <li className="current-conditions">
+              Wind Speed: {Math.round(props.data.windSpeed)} km/h
+            </li>
           </ul>
         </div>
       </div>

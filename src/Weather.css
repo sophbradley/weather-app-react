@@ -1,9 +1,12 @@
 .Weather {
   max-width: 700px;
-  border: 1px solid black;
+  border: 1px solid #8d9ac5c9;
   margin: 30px auto;
   padding: 20px;
-  border-radius: 6px;
+  border-radius: 8px;
+  background-color: #8d9ac5c9;
+  color: white;
+  box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Weather ul {
@@ -24,6 +27,36 @@
   font-size: 20px;
 }
 
-.Weather .currentTemperatureUnits a {
-  color: blueviolet;
+.search-bar {
+  border-radius: 6px;
+}
+
+.submit-button {
+  background-color: #5567c9;
+  color: white;
+  border: 1px solid #5567c9;
+  border-radius: 6px;
+  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 700px) {
+  .WeatherInfo .city-name,
+  .city-country,
+  .current-conditions {
+    text-align: center;
+  }
+
+  .WeatherInfo .weatherIcon {
+    float: none;
+  }
+
+  .Weather .currentTemperature {
+    font-size: 32px;
+  }
+
+  .Weather .currentTemperatureUnits {
+    position: relative;
+    top: -16px;
+    font-size: 10px;
+  }
 }

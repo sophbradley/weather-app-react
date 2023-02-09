@@ -1,16 +1,21 @@
 .App {
   max-width: 700px;
   margin: 0 auto;
+  font-family: "Exo", sans-serif;
 }
 
-.App-header,
+.App-header {
+  text-align: center;
+  color: #4653a0;
+}
+
 .App-footer {
   text-align: center;
-  color: blueviolet;
+  color: #5567c9;
 }
 
 .App-footer a {
-  color: blueviolet;
+  color: #5567c9;
   transition: all 150ms ease-in-out;
 }
 
